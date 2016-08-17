@@ -16,7 +16,7 @@
     "starter-kit",
     "minimal"
   ],
-  "author": "",
+  "author": "Henrique Alves <henriquea@gmail.com> (http://alves.im)",
   "license": "ISC",
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.12.0",
@@ -26,6 +26,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "babel-polyfill": "^6.13.0",
     "babel-runtime": "^6.11.6"
   }
 }
