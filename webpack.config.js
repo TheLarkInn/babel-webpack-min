@@ -3,8 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: [
-    'babel-polyfill',
-    './index.js'
+    './index'
   ],
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -22,13 +21,7 @@ module.exports = {
       ],
       test: /\.js$/,
       query: {
-        presets: [
-          'babel-preset-es2015',
-          'babel-preset-es2016'
-        ],
-        plugins: [
-          'babel-plugin-transform-runtime'
-        ]
+        presets: ['es2015']
       }
     }
   ],
