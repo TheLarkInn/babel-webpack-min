@@ -2,7 +2,10 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  entry: ['./main.js'],
+  entry: [
+    'babel-polyfill',
+    './index.js'
+  ],
   output: {
     path: path.resolve(__dirname, 'build'),
     publicPath: '/',
@@ -12,8 +15,10 @@ module.exports = {
     {
       loader: 'babel',
       include: [
-        path.resolve(__dirname),
-        path.resolve(__dirname, 'src')
+        path.resolve(__dirname)
+      ],
+      exclude: [
+        path.resolve(__dirname, 'node_modules'),
       ],
       test: /\.js$/,
       query: {

@@ -1,12 +1,21 @@
 {
   "name": "babel-webpack-min",
   "version": "1.0.0",
-  "description": "",
+  "description": "Bare minimum scaffolding project with Babel and Webpack",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node devServer.js"
   },
-  "keywords": [],
+  "keywords": [
+    "javascript",
+    "node",
+    "babel",
+    "webpack",
+    "boilerplate",
+    "scaffolding",
+    "starter-kit",
+    "minimal"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
