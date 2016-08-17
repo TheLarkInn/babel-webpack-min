@@ -13,12 +13,7 @@ var compiler = webpack(config);
 var server = new WebpackDevServer(compiler, {
   hot: true,
   quiet: true,
-  publicPath: config.output.publicPath,
-  // Avoids CPU overload on some systems.
-  // https://github.com/facebookincubator/create-react-app/issues/293
-  watchOptions: {
-    ignore: /node_modules/
-  }
+  publicPath: config.output.publicPath
 });
 
 server.listen(8081);
